@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    font-family: cursive;
+}
+
+
+
+
+
+
+
+body {
+    background-color: #e7eff6;
+    color: #2a4d69;
+}
+header {
+    display: flexbox;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.score {
+    text-align: float left;
+    justify-content: space-evenly
+}
+
+.timer {
+    text-align: float right;
+
+}
+
+ul {
+    
+    display: flex;
+    list-style: none;
+    background-color: #e7eff6;
+}
+
+ul li {
+    margin-right: 1.7rem;
+}
+
