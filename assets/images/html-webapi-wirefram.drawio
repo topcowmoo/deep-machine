@@ -1,0 +1,28 @@
+<mxfile host="Electron" modified="2023-12-01T20:09:59.478Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="iA3jjQopZUe-5yuavIX3" version="22.1.2" type="device">
+  <diagram name="Page-1" id="-aW1ulOjGHWkcGvLm99b">
+    <mxGraphModel dx="1114" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZfusVZY5U0edf4chE84P-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="60" y="40" width="740" height="740" as="geometry" />
+        </mxCell>
+        <mxCell id="ZfusVZY5U0edf4chE84P-2" value="Header&lt;br&gt;Tile&lt;br&gt;nav bar&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="85" y="120" width="700" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="ZfusVZY5U0edf4chE84P-3" value="Main&lt;br&gt;section&lt;br&gt;div class start&lt;br&gt;BUTTON start&lt;br&gt;div class card quiz question&lt;br&gt;div class &lt;br&gt;BUTTON question container&lt;br&gt;div class answers&lt;br&gt;div right/wrong&lt;br&gt;div class end&lt;br&gt;div class initials&amp;nbsp;&lt;br&gt;BUTTON submit&lt;br&gt;div class scores&lt;br&gt;BUTTON 1 go back&lt;br&gt;BUTTON 2 clear high scores&lt;br&gt;section&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="90" y="220" width="690" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="ZfusVZY5U0edf4chE84P-4" value="high score" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="160" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZfusVZY5U0edf4chE84P-5" value="timer" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="710" y="160" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZfusVZY5U0edf4chE84P-6" value="&lt;b&gt;HTML Wireframe&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="405" y="60" width="85" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
