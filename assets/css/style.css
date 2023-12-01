@@ -11,32 +11,15 @@ html {
 
 body {
     position: relative;
-    font-family: cursive;
+    font-family: 'Neucha', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 100;
 }
 
-
-
-
-
-
-
-body {
-    background-color: #e7eff6;
-    color: #2a4d69;
-}
 header {
-    display: flexbox;
+    display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-}
-.score {
-    text-align: float left;
-    justify-content: space-evenly
-}
-
-.timer {
-    text-align: float right;
-
+    margin: 25px;
 }
 
 ul {
