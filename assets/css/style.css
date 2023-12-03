@@ -55,3 +55,102 @@ header {
     text-align: right;
     flex: 1;
 }
+
+#start {
+    font-family: 'Neucha', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    background-color: #233142;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    color: whitesmoke;
+}
+
+#start:hover {
+    background-color: #f95959;
+}
+
+#highscore {
+    font-family: 'Neucha', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+#howplay {
+    text-align: center;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #f95959;
+}
+
+#clear {
+    font-family: 'Neucha', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    background-color: #233142;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    color: whitesmoke;
+}
+
+#clear:hover {
+    background-color: #f95959;
+}
+
+#back {
+    font-family: 'Neucha', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    background-color: #233142;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    color: whitesmoke;
+    margin: 5px;
+}
+
+#back:hover {
+    background-color: #f95959;
+}
+
+.button-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 3px groove black;
+    position: relative;
+    background-image: linear-gradient(to bottom, #1e73be72, #a9a9a968);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 75%;
+}
+
+.hscore-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 3px groove black;
+    position: relative;
+    background-image: linear-gradient(to bottom, #1e73be72, #a9a9a968);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    height: 75%;
+}
