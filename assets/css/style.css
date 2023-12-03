@@ -27,7 +27,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%; /* Ensure full width of the header */
+    width: 100%;
 }
 
 /* Style the "View High Scores" button */
