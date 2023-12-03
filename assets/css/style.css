@@ -153,3 +153,31 @@ a:hover {
     align-items: center;
     height: 75%;
 }
+
+#submit-score {
+    font-family: 'Neucha', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    background-color: #233142;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    color: whitesmoke;
+    margin: 5px;
+}
+
+#submit-score:hover {
+    background-color: #f95959;
+}
+
+#initials {
+    font-family: 'Neucha', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    color: black;
+    margin: 5px;
+    border: 1.5px solid black;
+}
