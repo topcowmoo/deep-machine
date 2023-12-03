@@ -56,12 +56,6 @@ let questions = [
 ];
 
 
-
-
-
-
-
-
 function questionStart() {
     timerID = setInterval(
         clockTick,
