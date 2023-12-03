@@ -149,7 +149,6 @@ a:hover {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     justify-content: flex-start;
     align-items: center;
     height: 75%;
