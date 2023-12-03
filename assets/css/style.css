@@ -37,7 +37,7 @@ header {
 
 .scores {
     margin-left: 10px;
-    color: black;
+    color: whitesmoke;
     padding: 10px 20px;
     cursor: pointer;
     font-family: 'Neucha', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -68,7 +68,7 @@ header {
 }
 
 #start:hover {
-    background-color: #f95959;
+    background-color: lightcoral;
 }
 
 #highscore {
@@ -88,7 +88,7 @@ a {
 }
 
 a:hover {
-    color: #f95959;
+    color: lightcoral;
 }
 
 #clear {
