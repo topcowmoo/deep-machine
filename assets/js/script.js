@@ -54,3 +54,33 @@ let questions = [
         correctAnswer: "true",
     },
 ];
+
+
+
+
+
+
+
+
+function questionStart() {
+    timerID = setInterval(
+        clockTick,
+        1000
+    );
+    timerE1.textContent = time;
+    let introPageE1 = document.getElementById(
+        "first-screen"
+    );
+
+    questionStartE1.setAttribute(
+        "class",
+        "hide"
+    );
+    questionsE1.removeAttribute(
+        "class"
+    );
+    getQuestion();
+}
+
+
+
