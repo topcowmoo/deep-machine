@@ -19,15 +19,23 @@ function printHighscores() {
                 );
             liTag.textContent = 
             score.name + " - " + score.score;
+        let olE1 =
+            document.getElementById(
+            "highscores"
+        );
+        olE1.appendChild(
+            liTag)
+        };
+}
 
-
-
-            
-        }
-
-
-
-
-
+function clearHighscores() {
+    window.localStorage.removeItem(
+        "highscores"
+    );
+    window.location.reload();
+    }
+    document.getElementById(
+        "clear"
+    ) .onclick = clearHighscores;
 
 printHighscores();
