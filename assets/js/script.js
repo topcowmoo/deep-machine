@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
             prompt: "What will the following code return: Boolean(10 > 9)?",
-            options: ["true", "false", "NaN", "Equal||"],
+            options: ["true", "false", "NaN", "Equal"],
             correctAnswer: "true",
         },
     ];

@@ -42,9 +42,10 @@ ol#highscores {
 
 ol#highscores li {
     margin: 0.5rem 0;
-    padding: 0.5rem;
+    padding: 5px;
     border: solid 1px;
     background-color: lightcoral;
+    border-radius: 6px;
 }
 
 .intro {
