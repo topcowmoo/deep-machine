@@ -88,6 +88,9 @@ document.addEventListener("DOMContentLoaded", function () {
     function questionClick() {
         if (this.value !== questions[currentQuestionIndex].correctAnswer) {
             time -= 10;
+            if (time < 0) {
+                time = 0;
+            }
             timerEl.textContent = time;
             feedbackEl.textContent = "Wrong!";
             feedbackEl.style.color = "red";
