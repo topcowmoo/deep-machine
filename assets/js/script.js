@@ -1,14 +1,5 @@
-let questionsEl = document.querySelector("#questions");
-    let timerEl = document.querySelector("#timer");
-    let choicesEl = document.querySelector("#options");
-    let submitBtn = document.querySelector("#submit-score");
-    let startBtn = document.querySelector("#start");
-    let nameEl = document.querySelector("#initials");
-    let feedbackEl = document.querySelector("#feedback");
-    let reStartBtn = document.querySelector("#restart");
-    
-    document.addEventListener("DOMContentLoaded", function () {
-        let questions = [
+document.addEventListener("DOMContentLoaded", function () {
+    let questions = [
             {
                 prompt: "In which HTML element do we put the JavaScript?",
                 options: ["<js>", "<javaScript>", "<scripting>", "<script>"],
@@ -49,7 +40,36 @@ let questionsEl = document.querySelector("#questions");
                 options: ["true", "false", "NaN", "Equal||"],
                 correctAnswer: "true",
             },
-        ];
+    ];
+
+    let questionsEl = document.getElementById("questions");
+    let timerEl = document.getElementById("timer");
+    let choicesEl = document.getElementById("options");
+    let submitBtn = document.getElementById("submit-score");
+    let startBtn = document.getElementById("start");
+    let nameEl = document.getElementById("initials");
+    let feedbackEl = document.getElementById("feedback");
+    let firstScreenEl = document.getElementById("first-screen");
+    let endScreenEl = document.getElementById("quiz-end");
+
+questionsEl.style.display = "none";
+endScreenEl.style.display = "none";
+
+let currentQuestionIndex = 0;
+let time = questions.length * 15;
+let timerId; 
+
+
+
+
+
+
+
+
+
+
+
+
 
 function questionStart() {
     timerID = setInterval(
