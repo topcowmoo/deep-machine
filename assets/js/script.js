@@ -110,3 +110,33 @@ function quizEnd() {
     let finalScoreEl = document.getElementById("score-final");
     finalScoreEl.textContent = time;
 }
+
+function clockTick() {
+    time--;
+    timerEl.textContent = time;
+    if (time <= 0) {
+        quizEnd();
+    }
+}
+
+function saveHighscore() {
+    let name = nameEl.value.trim();
+    if (name !== "") {
+        let highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
+        let newScore = { score: time, name: name };
+        highscores.push(newScore);
+        window.localStorage.setItem("highscores", JSON.stringify(highscores));
+        window.location.href = "highscore.html";
+    }
+}
+
+function checkForEnter(event) {
+    if (event.key === "Enter") {
+        saveHighscore();
+    }
+}
+
+startBtn.addEventListener('click', quizStart);
+    submitBtn.addEventListener('click', saveHighscore);
+    nameEl.addEventListener('keyup', checkForEnter);
+});
