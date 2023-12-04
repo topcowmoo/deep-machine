@@ -42,22 +42,30 @@ document.addEventListener("DOMContentLoaded", function () {
             },
     ];
 
-    let questionsEl = document.getElementById("questions");
-    let timerEl = document.getElementById("timer");
-    let choicesEl = document.getElementById("options");
-    let submitBtn = document.getElementById("submit-score");
-    let startBtn = document.getElementById("start");
-    let nameEl = document.getElementById("initials");
-    let feedbackEl = document.getElementById("feedback");
-    let firstScreenEl = document.getElementById("first-screen");
-    let endScreenEl = document.getElementById("quiz-end");
+let questionsEl = document.getElementById("questions");
+let timerEl = document.getElementById("timer");
+let choicesEl = document.getElementById("options");
+let submitBtn = document.getElementById("submit-score");
+let startBtn = document.getElementById("start");
+let nameEl = document.getElementById("initials");
+let feedbackEl = document.getElementById("feedback");
+let firstScreenEl = document.getElementById("first-screen");
+let endScreenEl = document.getElementById("quiz-end");
 
 questionsEl.style.display = "none";
 endScreenEl.style.display = "none";
 
 let currentQuestionIndex = 0;
 let time = questions.length * 15;
-let timerId; 
+let timerId;
+
+function quizStart() {
+    firstScreenEl.style.display = "none";
+    questionsEl.style.display = "";
+    timerId = setInterval(clockTick, 1000);
+    timerEl.textContent = time;
+    getQuestion();
+}
 
 
 
