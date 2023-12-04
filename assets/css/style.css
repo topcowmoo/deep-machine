@@ -201,5 +201,17 @@ div.options#options button{
     font-size: 16px;
     background-color: #233142;
     color: whitesmoke;
-    background: lightcoral;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    margin: 5px;
+}
+
+div.options#options button:hover {
+    background-color: lightcoral;
 }
