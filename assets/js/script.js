@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function quizStart() {
         firstScreenEl.style.display = "none";
         questionsEl.style.display = "";
-        timerId = setInterval(clockTick, 1000);
+        // timerId = setInterval(clockTick, 1000);
         timerEl.textContent = time;
         getQuestion();
     }

@@ -196,3 +196,10 @@ a:hover {
     margin: 5px;
     border: 1.5px solid black;
 }
+
+div.options#options button{
+    font-size: 16px;
+    background-color: #233142;
+    color: whitesmoke;
+    background: lightcoral;
+}
