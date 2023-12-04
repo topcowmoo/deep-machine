@@ -7,9 +7,9 @@ body, html {
 
 .container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: auto;
+    margin-top: 75px;
     padding: 20px;
-    background-color: #fff;
     border: 3px groove black;
     position: relative;
     background-image: linear-gradient(to bottom, #1e73be72, #a9a9a968);
@@ -155,9 +155,9 @@ a:hover {
 
 .hscore-container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: auto;
+    margin-top: 75px;
     padding: 20px;
-    background-color: #fff;
     border: 3px groove black;
     position: relative;
     background-image: linear-gradient(to bottom, #1e73be72, #a9a9a968);
