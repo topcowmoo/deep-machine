@@ -1,3 +1,13 @@
+let questionsEl = document.querySelector("#questions");
+    let timerEl = document.querySelector("#timer");
+    let choicesEl = document.querySelector("#options");
+    let submitBtn = document.querySelector("#submit-score");
+    let startBtn = document.querySelector("#start");
+    let nameEl = document.querySelector("#initials");
+    let feedbackEl = document.querySelector("#feedback");
+    let reStartBtn = document.querySelector("#restart");
+    
+document.addEventListener("DOMContentLoaded", function () {
 let questions = [
     {
         prompt: "In which HTML element do we put the JavaScript?",
@@ -54,7 +64,6 @@ let questions = [
         correctAnswer: "true",
     },
 ];
-
 
 function questionStart() {
     timerID = setInterval(
