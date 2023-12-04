@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Quiz</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="google-font" href="https://fonts.google.com/specimen/Neucha?classification=Handwriting">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neucha&display=swap">
 </head>
     
 <body>
@@ -18,13 +18,12 @@
             </div>
 
             <div class="div-timer">
-                <p>Time: <span class="timer">0</span>
+                <p>Time: <span class="timer" id="timer">0</span>
                 </p>
             </div>
         </header>
     <main class="quiz-container">   
-        <div class="question-start"
-            id="first-screen">
+        <div class="question-start" id="first-screen">
             <div class="intro">
                 <h1>JavaScript Coding Quiz Challenge</h1>
                 <p id="howplay">Try to answer the following code-related
@@ -34,7 +33,7 @@
                 </p>
                 <button id="start">Start Quiz</button>
             </div>
-
+        </div>
         <div class="hide" id="questions">
             <h2 id="question-list"></h2>
             <div class="options" id="options">
