@@ -28,6 +28,22 @@ header {
     width: 100%;
 }
 
+ol#highscores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding: 0px;
+}
+
+ol#highscores li {
+    margin: 1px;
+    padding: 10px;
+    border: solid 1px;
+    background-color: lightcoral;
+}
+
 .intro {
     display:flex;
     flex-direction: column;
@@ -71,10 +87,9 @@ header {
     background-color: lightcoral;
 }
 
-#highscore {
-    font-family: 'Neucha', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 16px;
-    margin-left: 10px;
+#highscores {
+    text-align: left;
+    font-size: 19px;
 }
 
 #howplay {
