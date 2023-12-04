@@ -1,14 +1,14 @@
 body, html {
     margin: 0;
-    padding: 0;
     height: 100%;
     font-family: 'Neucha', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    padding: 0.5rem;
 }
 
 .container {
     max-width: 800px;
     margin: auto;
-    margin-top: 75px;
     padding: 20px;
     border: 3px groove black;
     position: relative;
@@ -18,7 +18,9 @@ body, html {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 75%;
+    overflow-y: auto;
+    /* height: 75%; */
+    /* min-height: 100vh; */
 }
 
 header {
@@ -26,6 +28,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    padding: 1rem 0;
 }
 
 ol#highscores {
@@ -33,13 +36,13 @@ ol#highscores {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 100%;
     padding: 0px;
 }
 
 ol#highscores li {
-    margin: 1px;
-    padding: 10px;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
     border: solid 1px;
     background-color: lightcoral;
 }
@@ -67,7 +70,7 @@ ol#highscores li {
 }
 
 .div-timer {
-    margin-right: 20px;
+    margin-right: auto;
     text-align: right;
     flex: 1;
 }
@@ -156,7 +159,6 @@ a:hover {
 .hscore-container {
     max-width: 800px;
     margin: auto;
-    margin-top: 75px;
     padding: 20px;
     border: 3px groove black;
     position: relative;
@@ -166,7 +168,9 @@ a:hover {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 75%;
+    overflow-y: auto;
+    /* height: 75%; */
+    /* min-height: 100vh; */
 }
 
 #submit-score {
@@ -204,14 +208,27 @@ div.options#options button{
     border-radius: 6px;
     border: none;
     cursor: pointer;
-    padding: 5px;
+    padding: 0.5rem 1rem;
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
+    justify-content: center;
     align-items: center;
-    margin: 5px;
+    margin: 0.5rem;
+    min-width: 150px;
+    text-align: center;
 }
 
 div.options#options button:hover {
     background-color: lightcoral;
+}
+
+@media screen and (max-width: 768px;) {
+    .container {
+        margin-top: 0;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        margin-top: 0;
+    }
 }
