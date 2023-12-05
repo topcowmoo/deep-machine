@@ -53,6 +53,16 @@ pseudo code
 
 hhgjhgjhghjgkgjhjkhjkhjkhjkhjhkjh
 
+## Deployed Application
+
+Check out the deployed version of the application here:
+
+https://topcowmoo.github.io/deep-machine
+
+
+
+
+
 ## Credits
 
 Quiz questions provided by W3 Schools:
