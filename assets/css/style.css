@@ -23,7 +23,7 @@ body, html {
     overflow-y: auto;
 }
 
-/* Header style */
+/* Header styles */
 header {
     display: flex;
     flex-direction: row;
@@ -32,23 +32,27 @@ header {
     padding: 1rem 0;
 }
 
-ol#highscores {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 0px;
+#highscores {
+    text-align: left;
+    font-size: 19px;
 }
 
-ol#highscores li {
-    margin: 0.5rem 0;
-    padding: 5px;
-    border: solid 1px;
-    background-color: lightcoral;
-    border-radius: 6px;
+.div-timer {
+    margin-right: auto;
+    text-align: right;
+    flex: 1;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: lightcoral;
+}
+
+/* Main section styles */
 .intro {
     display:flex;
     flex-direction: column;
@@ -76,12 +80,6 @@ ol#highscores li {
     font-size: 16px;
 }
 
-.div-timer {
-    margin-right: auto;
-    text-align: right;
-    flex: 1;
-}
-
 #start, #clear {
     font-family: 'Neucha', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
@@ -97,20 +95,6 @@ ol#highscores li {
     background-color: lightcoral;
 }
 
-#highscores {
-    text-align: left;
-    font-size: 19px;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-a:hover {
-    color: lightcoral;
-}
-
 #back, #submit-score {
     font-family: 'Neucha', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
@@ -121,6 +105,24 @@ a:hover {
     border: none;
     color: whitesmoke;
     margin: 5px;
+}
+
+/* Questions and High score styles */
+ol#highscores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+}
+
+ol#highscores li {
+    margin: 0.5rem 0;
+    padding: 5px;
+    border: solid 1px;
+    background-color: lightcoral;
+    border-radius: 6px;
 }
 
 .button-container {
