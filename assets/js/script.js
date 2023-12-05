@@ -1,4 +1,6 @@
+// Event listener
 document.addEventListener("DOMContentLoaded", function () {
+    // Quiz questions
 let questions = [
     {
         prompt: "In which HTML element do we put the JavaScript?",
@@ -42,6 +44,7 @@ let questions = [
     },
     ];
 
+// Element reference objects
 let questionsEl = document.getElementById("questions");
 let timerEl = document.getElementById("timer");
 let choicesEl = document.getElementById("options");
@@ -52,13 +55,16 @@ let feedbackEl = document.getElementById("feedback");
 let firstScreenEl = document.getElementById("first-screen");
 let endScreenEl = document.getElementById("quiz-end");
 
+// Initial display
 questionsEl.style.display = "none";
 endScreenEl.style.display = "none";
 
+// Variables for quiz
 let currentQuestionIndex = 0;
 let time = questions.length * 15;
 let timerId;
 
+// Function to start quiz
 function quizStart() {
     firstScreenEl.style.display = "none";
     questionsEl.style.display = "";
@@ -67,6 +73,7 @@ function quizStart() {
     getQuestion();
 }
 
+// Function to show questions
 function getQuestion() {
     if (currentQuestionIndex < questions.length) {
     let currentQuestion = questions[currentQuestionIndex];
@@ -85,6 +92,7 @@ function getQuestion() {
     }
 }
 
+// Function for question click
 function questionClick() {
     if (this.value !== questions[currentQuestionIndex].correctAnswer) {
     time -= 10;
@@ -107,6 +115,7 @@ function questionClick() {
     getQuestion();
 }
 
+// Function to end quiz
 function quizEnd() {
     clearInterval(timerId);
     questionsEl.style.display = "none";
@@ -115,6 +124,7 @@ function quizEnd() {
     finalScoreEl.textContent = time;
 }
 
+// Function to show timer
 function clockTick() {
     time--;
     timerEl.textContent = time;
@@ -123,6 +133,7 @@ function clockTick() {
     }
 }
 
+// Function to save highscores
 function saveHighscore() {
     let name = nameEl.value.trim();
     if (name !== "") {
@@ -134,12 +145,14 @@ function saveHighscore() {
     }
 }
 
+// Function to check for enter key
 function checkForEnter(event) {
     if (event.key === "Enter") {
     saveHighscore();
     }
 }
 
+// Event listeners
 startBtn.addEventListener('click', quizStart);
 submitBtn.addEventListener('click', saveHighscore);
 nameEl.addEventListener('keyup', checkForEnter);
