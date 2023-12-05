@@ -1,3 +1,4 @@
+/* Font styles */
 body, html {
     margin: 0;
     height: 100%;
@@ -6,7 +7,8 @@ body, html {
     padding: 0.5rem;
 }
 
-.container {
+/* Container class styles */
+.container, .hscore-container {
     max-width: 800px;
     margin: auto;
     padding: 20px;
@@ -19,10 +21,9 @@ body, html {
     justify-content: flex-start;
     align-items: center;
     overflow-y: auto;
-    /* height: 75%; */
-    /* min-height: 100vh; */
 }
 
+/* Header style */
 header {
     display: flex;
     flex-direction: row;
@@ -55,6 +56,11 @@ ol#highscores li {
     align-items: center;
 }
 
+#howplay {
+    text-align: center;
+    font-size: 16px;
+}
+
 .scores {
     margin-left: 10px;
     color: whitesmoke;
@@ -76,7 +82,7 @@ ol#highscores li {
     flex: 1;
 }
 
-#start {
+#start, #clear {
     font-family: 'Neucha', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
     background-color: #233142;
@@ -87,18 +93,13 @@ ol#highscores li {
     color: whitesmoke;
 }
 
-#start:hover {
+#start:hover, #clear:hover, #back:hover, #submit-score:hover, div.options#options button:hover {
     background-color: lightcoral;
 }
 
 #highscores {
     text-align: left;
     font-size: 19px;
-}
-
-#howplay {
-    text-align: center;
-    font-size: 16px;
 }
 
 a {
@@ -110,22 +111,7 @@ a:hover {
     color: lightcoral;
 }
 
-#clear {
-    font-family: 'Neucha', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 16px;
-    background-color: #233142;
-    border-radius: 6px;
-    padding: 10px 20px;
-    cursor: pointer;
-    border: none;
-    color: whitesmoke;
-}
-
-#clear:hover {
-    background-color: #f95959;
-}
-
-#back {
+#back, #submit-score {
     font-family: 'Neucha', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
     background-color: #233142;
@@ -135,10 +121,6 @@ a:hover {
     border: none;
     color: whitesmoke;
     margin: 5px;
-}
-
-#back:hover {
-    background-color: #f95959;
 }
 
 .button-container {
@@ -157,39 +139,6 @@ a:hover {
     height: 75%;
 }
 
-.hscore-container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    border: 3px groove black;
-    position: relative;
-    background-image: linear-gradient(to bottom, #1e73be72, #a9a9a968);
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    overflow-y: auto;
-    /* height: 75%; */
-    /* min-height: 100vh; */
-}
-
-#submit-score {
-    font-family: 'Neucha', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 16px;
-    background-color: #233142;
-    border-radius: 6px;
-    padding: 10px 20px;
-    cursor: pointer;
-    border: none;
-    color: whitesmoke;
-    margin: 5px;
-}
-
-#submit-score:hover {
-    background-color: #f95959;
-}
-
 #initials {
     font-family: 'Neucha', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
@@ -202,7 +151,7 @@ a:hover {
     border: 1.5px solid black;
 }
 
-div.options#options button{
+div.options#options button {
     font-size: 16px;
     background-color: #233142;
     color: whitesmoke;
@@ -219,18 +168,15 @@ div.options#options button{
     text-align: center;
 }
 
-div.options#options button:hover {
-    background-color: lightcoral;
-}
-
+/* Media queries */
 @media screen and (max-width: 768px) {
     .container {
-        margin-top: 0;
-}
+    margin-top: 0;
+    }
 }
 
 @media screen and (max-width: 480px) {
     .container {
-        margin-top: 0;
+    margin-top: 0;
     }
 }
